@@ -6,6 +6,6 @@ cd $1
 touch Gemfile
 echo "source \"https://rubygems.org\"" >> Gemfile
 echo "gem \"zurb-foundation\", :git => \"$2\"" >> Gemfile
-echo "gem \"compass\""
+echo "gem \"compass\"" >> Gemfile
 bundle install
 bundle exec compass create . -r zurb-foundation --using foundation
